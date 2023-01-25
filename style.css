@@ -1,0 +1,152 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300&family=Rowdies:wght@300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;700&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins';
+    box-sizing: border-box;
+    list-style: none;
+}
+
+/*Cabeçalho*/
+
+header{
+    background-color: #fff;
+    position: absolute;
+    align-items: center;
+    width: 100%;
+    justify-content: space-around;
+    padding: 1rem 0;
+    color: white;
+}
+
+.logo{
+    font-family: 'Rowdies';
+    text-align: center;
+    font-size: 2rem;
+    color: rgba(41, 41, 41, 0.815);
+}
+header, ul{
+    gap: 1rem;
+}
+
+ul li{
+    background: transparent;
+    cursor: pointer;
+    display: none;
+    font-weight: bolder;
+}
+
+/*Corpo*/
+
+.background-inicial{
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    height: 100vh;
+    background-position: center;
+    background-size: cover;
+    background-attachment: fixed;
+    background-image: url(https://i0.wp.com/studioghibli.com.br/wp-content/uploads/2020/04/O-Castelo-Animado-Howl-e-Sophie.jpg?fit=1772%2C959&ssl=1);
+}
+
+.background-inicial .nome-anime{
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+    margin-top: 45vh;
+    color: white;
+    font-weight: 700;
+    font-size: 2.5rem;
+}
+.container{
+    padding: 1rem;
+}
+.sobre{
+    width: 100%;
+    background-color: blue;
+}
+.poster{
+    width: 24rem;
+    text-align: left;
+}
+
+.titulo-sessao{
+    font-family: 'Rowdies';
+    padding: 1rem;
+    font-size: 3rem;
+    text-align: left;
+}
+
+p{
+    text-align: left;
+    font-size: 1.5rem;
+    background-color: red;
+
+}
+
+.textinho{
+    padding: 1rem;
+    border-radius: 20px;
+    background-color: palegoldenrod;
+}
+.sinopse{
+    border-radius: 20px;
+}
+.trilha{
+    border-radius: 20px;
+}
+.trailer{
+    width: 25rem;
+    height: 15rem;
+    border-radius: 20px;
+
+}
+
+
+@media  (min-width: 700px) {
+    header{
+        background-color: transparent;
+    }
+    .logo{
+        font-family: 'Rowdies';
+        text-align: left;
+        font-size: 2.5rem;
+        padding: 0 2rem;
+        color: #fff;
+    }
+
+    .background-inicial .nome-anime{
+        font-weight: 700;
+        font-size: 4rem;
+    }
+    .sobre{
+        display: flex;
+        justify-content: space-around;
+        align-items: left;
+    }
+    .poster{
+        width: 29rem;
+        max-width: 600px;
+    }
+    .textinho{
+        max-width: 500px;
+        flex-wrap: wrap;
+    }
+    .sinopse{
+        display: flex;
+        flex-direction: column;
+        gap:2rem;
+        width: 50%;
+    }
+    ul li{
+        display: flex;
+    }
+    ul{
+        display: flex;
+    }
+   header{
+    display: flex;
+   }
+}
